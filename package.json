@@ -1,0 +1,17 @@
+{
+  "name": "puydata.fr",
+  "version": "0.1.0",
+  "description": "Puydata.fr website",
+  "main": "index.js",
+  "repository": "https://www.puydata.fr",
+  "author": "Julien Maupetit <julien@maupetit.net>",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn run compile --minify",
+    "compile": "yarn run tailwindcss -i src/css/input.css -o src/css/style.css",
+    "dev": "yarn run compile --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
