@@ -55,6 +55,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build
+          path: src
       - name: Check files permissions
         run: find src -type f | xargs ls -l
       - name: Setup Pages
